@@ -1,8 +1,8 @@
 name: kropper
 description: A Flutter plugin invoking image cropping functionality on both Android and iOS
 version: 0.0.1
-author:
-homepage:
+author: Kan Zheng <kzheng1529@gmail.com>
+homepage: https://github.com/kandroid29/kropper
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
