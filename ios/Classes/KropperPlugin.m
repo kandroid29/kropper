@@ -11,9 +11,13 @@
 
 - (void)handleMethodCall:(FlutterMethodCall*)call result:(FlutterResult)result {
   if ([@"getPlatformVersion" isEqualToString:call.method]) {
-    result([@"iOS " stringByAppendingString:[[UIDevice currentDevice] systemVersion]]);
+      result([@"iOS " stringByAppendingString:[[UIDevice currentDevice] systemVersion]]);
+  } else if([@"cropImage" isEqualToString:call.method]) {
+      NSString *sourcePath = [[call arguments] objectForKey:@"imagePath"];
+      NSString *imagePath = @"/";
+      result(imagePath);
   } else {
-    result(FlutterMethodNotImplemented);
+      result(FlutterMethodNotImplemented);
   }
 }
 
