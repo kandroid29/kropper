@@ -11,5 +11,5 @@ kropper: ^0.0.1
 
 ````dart
 var filePath = '<path of the original image to be cropped>'
-File imageFile = await Kropper.cropImage(filePath);
+File croppedImage = await Kropper.cropImage(filePath);
 ````
